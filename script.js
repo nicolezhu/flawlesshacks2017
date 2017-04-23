@@ -2,10 +2,10 @@ var date = new Date();
 var hour = date.getHours();
 var minutes = date.getMinutes();
 var sadImages = ["images/sad1.gif", "images/sad2.gif", "images/sad3.gif", "images/sad4.gif", "images/sad5.gif"];
-var happyImages = ["images/happy1.gif", "images/happy2.gif", "images/happy3.gif"];
+var happyImages = ["images/happy1.gif", "images/happy2.gif", "images/happy3.gif", "images/happy4.gif", "images/happy5.gif"];
 
 
-var jumping = false;
+var jumping = hour == 11 && minutse == 30;
 if (!jumping) {
   var audio = new Audio('JumpinJumpin.mp3');
   audio.play();
