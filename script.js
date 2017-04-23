@@ -5,7 +5,7 @@ var sadImages = ["images/sad1.gif", "images/sad2.gif", "images/sad3.gif", "image
 var happyImages = ["images/happy1.gif", "images/happy2.gif", "images/happy3.gif", "images/happy4.gif", "images/happy5.gif"];
 
 
-var jumping = hour == 11 && minutse == 30;
+var jumping = hour === 11 && minutes === 30;
 if (!jumping) {
   var audio = new Audio('JumpinJumpin.mp3');
   audio.play();
