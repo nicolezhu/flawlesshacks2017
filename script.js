@@ -4,9 +4,9 @@ var minutes = date.getMinutes();
 var sadImages = ["images/sad1.gif", "images/sad2.gif", "images/sad3.gif", "images/sad4.gif", "images/sad5.gif"];
 var happyImages = ["images/happy1.gif", "images/happy2.gif", "images/happy3.gif", "images/happy4.gif", "images/happy5.gif"];
 
-
-var jumping = hour === 11 && minutes === 30;
-if (!jumping) {
+var jumping = hour == 23 && minutes == 30;
+if (jumping) {
+  // Not 11:30 so the club is not jumping
   var audio = new Audio('JumpinJumpin.mp3');
   audio.play();
   // It's 11:30pm and the club is jumping jumping.
@@ -15,9 +15,9 @@ if (!jumping) {
   document.getElementsByTagName("BODY")[0].style.backgroundImage = "url(" + pic + ")";
 }
 else {
+  // Not 11:30 so the club is not jumping
   var audio = new Audio('loveme.mp3');
   audio.play();
   var pic = sadImages[parseInt(Math.random()*sadImages.length)];
   document.getElementsByTagName("BODY")[0].style.backgroundImage = "url(" + pic + ")";
-  // Not 11:30 so the club is not jumping
 }
