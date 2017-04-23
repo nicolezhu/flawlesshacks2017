@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
+
+body {
+  background-image: url("images/sad1.gif");
+}
+
+#flawless {
+  padding-top: 50vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: yellow;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 1px 10px 2px black;
+}
